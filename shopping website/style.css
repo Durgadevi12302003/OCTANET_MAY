@@ -1,0 +1,139 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e5e3f0f; /* Light background color */
+}
+
+/* Container for consistent width */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Navigation Bar Styling */
+header {
+    background-color: white; /* Dark background for the navigation bar */
+    color: black; /* White text color */
+    padding: 15px;
+    position: sticky; /* Keeps the navigation bar at the top */
+    top: 0;
+    z-index: 1000; /* Ensures the navigation bar stays above other elements */
+}
+
+/* Logo Styling with Extra Features */
+header .logo-container {
+    display:flex; /* Use flex layout for alignment */
+    align-items: center; /* Align items vertically */
+}
+
+header .logo-image {
+    height: 80px; /* Height of the logo image */
+    margin-right: 20px; /* Spacing between image and text */
+}
+
+header .logo-text {
+    font-size: 30px; /* Font size for the text */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+
+header nav {
+    float: right; /* Aligns the navigation to the right */
+}
+
+header .nav-links {
+    list-style: none; /* No bullet points */
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Align items inline */
+}
+
+header .nav-links li {
+    display: inline-block; /* Display each item inline */
+    margin-right: 15px;
+}
+
+header .nav-links li a {
+    color: black; /* White text color */
+    text-decoration: none;
+}
+
+header .nav-links li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.vertical-dresses {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    gap: 20px; /* Add spacing between items */
+}
+
+.vertical-dresses .dress-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.vertical-dresses .dress-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Hero Section with Background Image */
+.hero {
+    background-image: linear-gradient(
+        to bottom, /* Gradient direction: top to bottom */
+        transparent, /* Start transparent */
+        rgba(0, 0, 0, 0.7) /* End with a semi-transparent black */
+    ), url('backkground.jpg'); /* Ensure the correct path to your image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image for consistency */
+    background-repeat: no-repeat; /* No repetition to avoid tiling */
+    height: 600px; /* Height of the section */
+    display: flex; /* Flex layout for centering content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center text */
+    color: white; /* White text color for readability */
+}
+
+
+
+.hero .cta-btn {
+    background-color: #ff5722; /* Orange button color */
+    color: #fff; /* White text color */
+    padding: 12px 24px;
+    border-radius: 10px;
+    text-decoration: none; /* No underline */
+}
+
+.hero .cta-btn:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+}
+
+/* Section Styling */
+section {
+    padding: 20px; /* Padding for all sections */
+}
+
+.about, .contact {
+    text-align: center; /* Center text */
+    background-color: #333333;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #33333347; /* Dark background for the footer */
+    color: #ffffff; /* White text color */
+    text-align: center;
+    padding: 15px; /* Padding for the footer */
+}
