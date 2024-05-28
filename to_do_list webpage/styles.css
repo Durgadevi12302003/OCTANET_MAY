@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('todo3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background: transparent; /* Semi-transparent background */
+    padding: 10px; /* Reduce padding to minimize box length */
+    width: 80%; /* Full width for smaller screens */
+    max-width: 300px; /* Maximum width for better readability */
+    text-align: left; /* Align text to the left */
+    position:absolute; /* Position the container */
+    top: 300px; /* Distance from the top */
+    left: 250px; /* Distance from the left */
+    transform: skewX(6deg);
+}
+
+
+
+h1 {
+    margin-bottom: 20px;
+    font-family: "Comic Sans MS", cursive;
+    font-size: larger;
+}
+
+form {
+    display:grid;
+    flex-direction: column;
+}
+
+form input, form select, form button {
+    padding: 10px;
+    margin: 5px 0;
+    border: none; /* Remove border */
+    background: transparent; /* Make background transparent */
+    font-size: 1em;
+    color: #333; /* Text color */
+    outline: none; /* Remove outline */
+}
+
+form input::placeholder, form select, form button {
+    color: #666; /* Placeholder text color */
+}
+
+form select {
+    background: transparent; /* Semi-transparent background */
+    border-radius: 5px;
+}
+
+form button {
+    background-color:rgb(225, 185, 132);
+    color: black;
+    cursor:pointer;
+    border: none;
+    padding: 5px 20px; /* Adjust padding */
+    margin: 10px ; /* Adjust margin */
+    border-radius: 20px;
+}
+
+form button:hover {
+    background-color: rgb(225, 185, 132);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    background: transparent;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+li span {
+    flex-grow: 1;
+    font-size: 1.1em;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+li button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+li button.complete {
+    color: #28a745;
+}
+
+li button.delete {
+    color: #dc3545;
+}
+
+li.priority-low {
+    border-left: 5px solid #007bff;
+}
+
+li.priority-medium {
+    border-left: 5px solid #ffc107;
+}
+
+li.priority-high {
+    border-left: 5px solid #dc3545;
+}
